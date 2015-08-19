@@ -1,4 +1,4 @@
-package selesdepselesnul.httpbuddy;
+package selesdepselesnul.httpbuddy.app;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -11,8 +11,8 @@ public class Main extends Application {
 		try {
 			FXMLLoader fxmlLoader = new FXMLLoader();
 			fxmlLoader.load(ClassLoader.getSystemResourceAsStream(
-					"selesdepselesnul/httpbuddy/HttpBuddy.fxml"));
-			Scene scene = new Scene(fxmlLoader.getRoot(), 400, 400);
+					"selesdepselesnul/httpbuddy/view/HttpBuddy.fxml"));
+			Scene scene = new Scene(fxmlLoader.getRoot());
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (Exception e) {
